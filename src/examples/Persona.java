@@ -1,7 +1,7 @@
 package examples;
 
 public class Persona {
-	String nombre;
+	protected String nombre;
 	int edad;
 	double altura;
 	
