@@ -4,14 +4,21 @@ public class Main {
 
 	
 	public static void main(String[] args) {
+//		
+//		Persona per = new Persona("Pepe",12, 2.00);
+//		
+//		per.setEdad(13);
+//		per.setNombre("Jose");
+//		Persona per2 = new Persona("María");
+//	
+//		Persona per3 = new Persona();
+//		
+//		System.out.println(per.getNombre());
 		
-		Persona per = new Persona("Pepe",12, 2.00);
+		String cad = "Hola mundo";
 		
-		Persona per2 = new Persona("María");
-	
-		Persona per3 = new Persona();
-		
-		System.out.println(per.nombre);
+		cad = cad.replace("o", "u");
+		System.out.println(cad);
 	}
 
 }

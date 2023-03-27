@@ -1,11 +1,10 @@
 package examples;
 
 public class Persona {
-	String nombre;
-	int edad;
-	double altura;
-	
-	
+	private String nombre;
+	private int edad;
+	private double altura;
+
 	public Persona() {
 		edad = 18;
 	}
@@ -20,7 +19,29 @@ public class Persona {
 		this.altura = altura;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
 
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
 
 	public void metodo() {
 		int edad;
