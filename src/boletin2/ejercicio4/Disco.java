@@ -1,10 +1,13 @@
 package boletin2.ejercicio4;
 
 public class Disco {
+	
+	enum Genero {Rock, Pop, Electrónica, Reggaeton};
+	
 	private String codigo = "LIBRE";
 	private String autor = "";
 	private String titulo = "";
-	private String genero = "";
+	private Genero genero;
 	private int duracion = 0;
 
 	public Disco() {
@@ -15,7 +18,7 @@ public class Disco {
 		this.codigo = codigo;
 		this.autor = autor;
 		this.titulo = titulo;
-		this.genero = genero;
+		this.genero = Genero.valueOf(genero);
 		if (duracion > 0) {
 			this.duracion = duracion;
 		}
@@ -48,7 +51,7 @@ public class Disco {
 
 	public void setAutor(String autor) {
 		this.autor = autor;
-	}
+	}		
 
 	public String getTitulo() {
 		return titulo;
@@ -58,12 +61,12 @@ public class Disco {
 		this.titulo = titulo;
 	}
 
-	public String getGenero() {
+	public Genero getGenero() {
 		return genero;
 	}
 
 	public void setGenero(String genero) {
-		this.genero = genero;
+		this.genero = Genero.valueOf(genero);
 	}
 
 	public int getDuracion() {

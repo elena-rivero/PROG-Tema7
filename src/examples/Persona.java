@@ -5,6 +5,8 @@ public class Persona {
 	private int edad;
 	private double altura;
 
+	
+	
 	public Persona() {
 		edad = 18;
 	}
